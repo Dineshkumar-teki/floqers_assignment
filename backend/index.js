@@ -16,11 +16,11 @@ app.use(cors());
 
 const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
-
 app.listen(3002, () => {
   console.log("App listens to port no 3002");
 });
+
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 // Task 1 API
 
